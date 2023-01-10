@@ -30,8 +30,7 @@ ssh-keygen -t rsa -b 4096 -C "uname@edu.umea.se"
 cat ~/.ssh/id_rsa.pub
 ```
 
-Den publika nyckeln kommer se ut på följande format:
-
+feijifewjfeijoffewoewjf
 ```bash
 ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAklOUpkDHrfHY17SbrmTIpNLTGK9Tjom/BWDSU
 GPl+nafzlHDTYW7hdI4yZ5ew18JH4JW9jbhUFrviQzM7xlELEVf4h9lFX5QVkbPppSwg0cda3
