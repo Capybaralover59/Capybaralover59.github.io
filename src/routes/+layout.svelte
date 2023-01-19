@@ -10,6 +10,9 @@
       margin-left: 10%;
       margin-right: 10%;
     }
+    .container{
+      margin:-25px;
+    }
   </style>
 </svelte:head>
 

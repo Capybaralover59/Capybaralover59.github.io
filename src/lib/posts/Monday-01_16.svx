@@ -1,0 +1,17 @@
+---
+title: Monday afternoon
+Date: "2023-01-16"
+---
+
+# Second "wave" of changes for my website
+
+I have today changed my UI a little so now i've got picture of some galaxies as a background for my website, I managed to do this by scaling the image with the following code:
+
+```css
+article { 
+    width: 100vw; 
+    margin: 0; 
+}
+```
+
+This worked well the only problem is that my image is kinda ugly and it's in like 140p quality which isn't that nice to look at. I have also changed my "cookie" so now it's a black hole that you click on to get black hole cookies, i'm going to change the currency to black hole cookies. I will also add some finish touches or whatever you wann call it before the end 
