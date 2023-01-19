@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="../favicon.png" />
+		<meta name="viewport" content="width=device-width" />
+		<meta http-equiv="content-security-policy" content="">
+		<link href="../_app/immutable/assets/_layout-8003c18b.css" rel="stylesheet">
+		<link href="../_app/immutable/assets/2-c12348e4.css" rel="stylesheet">
+		<link rel="modulepreload" href="../_app/immutable/start-6f10b124.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/index-b91c8866.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/singletons-f2190502.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/preload-helper-41c905a7.js">
+		<link rel="modulepreload" href="../_app/immutable/components/pages/_layout.svelte-0c04f4fc.js">
+		<link rel="modulepreload" href="../_app/immutable/modules/pages/_layout.js-9cbb603b.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/_layout-da46b06b.js">
+		<link rel="modulepreload" href="../_app/immutable/components/pages/devblog/_path_/_page.svelte-9e9577e4.js">
+		<link rel="modulepreload" href="../_app/immutable/modules/pages/devblog/_path_/_page.js-fbe7d5b1.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/_page-6c557f9a.js"><!-- HEAD_svelte-mjr4hr_START --><link rel="stylesheet" href="/pico.min.css"><style>nav {
+      margin-left: 10%;
+      margin-right: 10%;
+    }
+    .container{
+      margin:-25px;
+    }
+  </style><!-- HEAD_svelte-mjr4hr_END -->
+	</head>
+	<body>
+		<div style="display: contents">
+
+
+
+
+<nav><ul><li><a href="/">Hem</a></li>
+    <li><a href="/devblog">Blog</a></li></ul></nav>
+
+<main class="container-fluid"><hr>
+
+  <main class="container">
+
+
+<article><h1>Thursday morning</h1>
+  <p>Published: 2023-01-19</p>
+  <p>today i changed some stuff, i added some music that you can play if you want to, i also added a button that you can click to stop the music. I have added some minors such as text changes where i just changed the name of the workers. I also added some code</p>
+<pre class="language-css"><!-- HTML_TAG_START --><code class="language-css"><span class="token selector">function nFormatter(num, digits)</span> <span class="token punctuation">&#123;</span>
+  <span class="token selector">const lookup = [</span>
+    <span class="token punctuation">&#123;</span> <span class="token property">value</span><span class="token punctuation">:</span> 1<span class="token punctuation">,</span> <span class="token property">symbol</span><span class="token punctuation">:</span> <span class="token string">""</span> <span class="token punctuation">&#125;</span><span class="token selector">,</span>
+    <span class="token punctuation">&#123;</span> <span class="token property">value</span><span class="token punctuation">:</span> 1e3<span class="token punctuation">,</span> <span class="token property">symbol</span><span class="token punctuation">:</span> <span class="token string">"k"</span> <span class="token punctuation">&#125;</span><span class="token selector">,</span>
+    <span class="token punctuation">&#123;</span> <span class="token property">value</span><span class="token punctuation">:</span> 1e6<span class="token punctuation">,</span> <span class="token property">symbol</span><span class="token punctuation">:</span> <span class="token string">"M"</span> <span class="token punctuation">&#125;</span><span class="token selector">,</span>
+    <span class="token punctuation">&#123;</span> <span class="token property">value</span><span class="token punctuation">:</span> 1e9<span class="token punctuation">,</span> <span class="token property">symbol</span><span class="token punctuation">:</span> <span class="token string">"G"</span> <span class="token punctuation">&#125;</span><span class="token selector">,</span>
+    <span class="token punctuation">&#123;</span> <span class="token property">value</span><span class="token punctuation">:</span> 1e12<span class="token punctuation">,</span> <span class="token property">symbol</span><span class="token punctuation">:</span> <span class="token string">"T"</span> <span class="token punctuation">&#125;</span><span class="token selector">,</span>
+    <span class="token punctuation">&#123;</span> <span class="token property">value</span><span class="token punctuation">:</span> 1e15<span class="token punctuation">,</span> <span class="token property">symbol</span><span class="token punctuation">:</span> <span class="token string">"P"</span> <span class="token punctuation">&#125;</span><span class="token selector">,</span>
+    <span class="token punctuation">&#123;</span> <span class="token property">value</span><span class="token punctuation">:</span> 1e18<span class="token punctuation">,</span> <span class="token property">symbol</span><span class="token punctuation">:</span> <span class="token string">"E"</span> <span class="token punctuation">&#125;</span>
+  ]<span class="token punctuation">;</span>
+  const rx = /.0+$|<span class="token punctuation">(</span>.[0-9]*[1-9]<span class="token punctuation">)</span>0+$/<span class="token punctuation">;</span>
+  <span class="token selector">var item = lookup.slice().reverse().find(function(item)</span> <span class="token punctuation">&#123;</span>
+    return num >= item.value<span class="token punctuation">;</span>
+  <span class="token punctuation">&#125;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  return item ? <span class="token punctuation">(</span>num / item.value<span class="token punctuation">)</span>.<span class="token function">toFixed</span><span class="token punctuation">(</span>digits<span class="token punctuation">)</span>.<span class="token function">replace</span><span class="token punctuation">(</span>rx<span class="token punctuation">,</span> <span class="token string">"$1"</span><span class="token punctuation">)</span> + item.<span class="token property">symbol</span> <span class="token punctuation">:</span> <span class="token string">"0"</span><span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span></code><!-- HTML_TAG_END --></pre></article></main></main>
+
+
+		<script type="module" data-sveltekit-hydrate="9f4014">
+			import { start } from "../_app/immutable/start-6f10b124.js";
+
+			start({
+				env: {},
+				paths: {"base":"","assets":""},
+				target: document.querySelector('[data-sveltekit-hydrate="9f4014"]').parentNode,
+				version: "1674127544088",
+				hydrate: {
+					node_ids: [0, 4],
+					data: [null,null],
+					form: null
+				}
+			});
+		</script>
+	</div>
+	</body>
+</html>
